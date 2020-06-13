@@ -1,13 +1,14 @@
-import React, { Component } from 'react';
+import React from 'react';
 import PostCreate from './components/PostCreate'
+import PostList from './components/PostList'
 
-class App extends Component {
-    state = {  }
-    render() { 
-        return ( <div className="container">
-            <PostCreate/>
-        </div> );
-    }
+export default () => {
+    return ( <div className="container">
+            <PostCreate />
+            <hr />
+            <h1> List of Posts </h1>
+            <PostList />
+        </div>
+    );
 }
  
-export default App;
